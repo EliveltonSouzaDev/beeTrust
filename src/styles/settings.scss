@@ -1,0 +1,54 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https: //vuetifyjs.com/features/sass-variables/`
+// @use "vuetify/settings" with (
+//   $color-pack: false
+// );
+
+html {
+  font-size: 90%;
+  @media only screen and (min-width: 600px) {
+    font-size: 94%;
+  }
+  @media only screen and (min-width: 1000px) {
+    font-size: 98%;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 100%;
+  }
+}
+
+
+.textLimit3 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.textLimit2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.textLimit2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
